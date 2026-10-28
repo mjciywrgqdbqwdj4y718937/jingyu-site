@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>产品 · 鲸屿 JINGYU</title>
+<meta name="description" content="鲸屿产品功能、版本下载、系统要求与热更新说明。">
+<meta property="og:title" content="产品 · 鲸屿 JINGYU">
+<meta property="og:description" content="鲸屿产品功能、版本下载、系统要求与热更新说明。">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/jingyu.ico">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-in">
+    <a class="brand" href="index.html"><img src="assets/jingyu_logo.png" alt="鲸屿"><span><b>鲸屿</b><small>JINGYU</small></span></a>
+    <nav class="nav">
+      <a href="index.html">首页</a>
+      <a href="product.html">产品</a>
+      <a href="docs.html">文档</a>
+      <a href="ecosystem.html">生态</a>
+      <a href="support.html">支持</a>
+      <a href="about.html">关于</a>
+      <a href="legal.html">法律</a>
+    </nav>
+    <div class="header-cta"><a class="btn primary" href="product.html#download">下载 1.2</a></div>
+    <button class="menu-btn" aria-label="菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="container">
+  <p class="crumbs"><a href="index.html">首页</a> / 产品</p>
+  <p class="eyebrow">PRODUCT</p>
+  <h1>产品</h1>
+  <p class="lead">一个本地优先的桌面控制台：启动、连接、查看、更新。每个细节都为“看得懂、放得心”而设计。</p>
+  <p><a class="btn primary" href="#download">下载 1.2</a> <a class="btn ghost" href="docs.html#quickstart">快速开始</a></p>
+</div></section>
+<div class="subnav"><div class="container subnav-in">
+  <a href="#features">功能总览</a><a href="#download">版本下载</a><a href="#requirements">系统要求</a><a href="#changelog">更新日志</a><a href="#hotfix">热更新</a>
+</div></div>
+
+<section class="section" id="features"><div class="container">
+  <p class="eyebrow">FEATURES</p><h2>功能总览</h2>
+  <div class="grid g3" style="margin-top:26px">
+    <div class="card reveal"><div class="ico">🐳</div><h3>启动与登录</h3><p>鲸屿启动动画可跳过；本地注册/登录，支持记住登录与游客只读浏览。</p></div>
+    <div class="card reveal"><div class="ico">🛰️</div><h3>账号与平台</h3><p>展示 QQ 在线状态、AstrBot 平台连接情况；添加账号引导到 NapCat 扫码。</p></div>
+    <div class="card reveal"><div class="ico">🧩</div><h3>插件管理</h3><p>查看真实插件列表与启用状态，只读展示，避免误操作。</p></div>
+    <div class="card reveal"><div class="ico">🎭</div><h3>人格配置</h3><p>展示人格列表与默认人格，了解当前会话使用的人格。</p></div>
+    <div class="card reveal"><div class="ico">🎙️</div><h3>语音与模型</h3><p>查看语音引擎、音色与模型服务状态，云端能力一目了然。</p></div>
+    <div class="card reveal"><div class="ico">🔄</div><h3>更新与热更</h3><p>版本号、更新说明、便携热更新：覆盖即可，不卸载、不丢配置。</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="download"><div class="container">
+  <p class="eyebrow">DOWNLOAD</p><h2>版本下载</h2>
+  <div class="download reveal" style="margin-top:24px">
+    <div>
+      <span class="ver">v1.2.0 · 2026-10-28</span>
+      <h3>鲸屿 1.2 · Windows</h3>
+      <ul><li>开机动画跳过按钮</li><li>真实登录 / 游客只读</li><li>QQ 与平台状态拉取</li><li>可缩放窗口与热更新</li></ul>
+      <div class="meta">解压即用 · 无需安装运行库</div>
+    </div>
+    <div style="text-align:center">
+      <a class="btn primary" href="downloads/jingyu-1.2-win64.zip" download>下载 1.2</a>
+      <p style="font-size:12px;margin-top:10px">SHA256：见下载包内说明</p>
+    </div>
+  </div>
+  <div class="notice blue" style="margin-top:18px">安全提示：请从本官网或你信任的渠道下载。鲸屿安装包不包含任何服务器密码、Token 或他人账号信息。</div>
+</div></section>
+
+<section class="section" id="requirements"><div class="container">
+  <p class="eyebrow">REQUIREMENTS</p><h2>系统要求</h2>
+  <div class="table-wrap"><table>
+    <tr><th>项目</th><th>要求</th></tr>
+    <tr><td>操作系统</td><td>Windows 10 / Windows 11（64 位）</td></tr>
+    <tr><td>浏览器组件</td><td>Microsoft Edge（Win10/11 自带）</td></tr>
+    <tr><td>运行环境</td><td>无需安装 Python / .NET；解压后双击即可</td></tr>
+    <tr><td>网络</td><td>可选；连接 AstrBot / NapCat 时需要能访问你的服务器</td></tr>
+    <tr><td>磁盘</td><td>约 80 MB（含运行库）</td></tr>
+  </table></div>
+</div></section>
+
+<section class="section" id="changelog"><div class="container">
+  <p class="eyebrow">CHANGELOG</p><h2>更新日志</h2>
+  <div class="timeline" style="margin-top:24px">
+    <div class="item"><b>1.2.0 · 2026-10-28</b><span>新增开机动画跳过；真实本地登录与游客只读；QQ/平台状态拉取；窗口可缩放/最小化；添加账号提示优化；版本与热更新说明。</span></div>
+    <div class="item"><b>1.1.x · 2026-10-27</b><span>控制台界面与数据桥接完善；连接设置、插件/人格展示、移动端页面。</span></div>
+    <div class="item"><b>1.0.0 · 2026-10</b><span>鲸屿首个正式版本：启动动画、登录、控制台与连接配置。</span></div>
+  </div>
+</div></section>
+
+<section class="section" id="hotfix"><div class="container">
+  <p class="eyebrow">HOT UPDATE</p><h2>便携热更新</h2>
+  <p class="lead">不用卸载重装，覆盖即可。</p>
+  <div class="steps" style="margin-top:22px">
+    <div class="step"><div><b>退出鲸屿</b><p>关闭控制台窗口，确保进程已退出。</p></div></div>
+    <div class="step"><div><b>覆盖程序</b><p>用新版本的 <code>鲸屿.exe</code> 覆盖旧文件，把新的 <code>_internal</code> 文件夹整体替换。</p></div></div>
+    <div class="step"><div><b>保留配置</b><p><code>cloud_config.json</code> / <code>users.json</code> 留在程序目录即可，账号与连接不会丢。</p></div></div>
+  </div>
+</div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:12px"><img src="assets/jingyu_logo.png" alt="鲸屿"><span><b>鲸屿</b><small>JINGYU</small></span></a>
+        <p style="font-size:13.5px">小鲸鱼娘控制台。让机器人与你的桌面更近一点。</p>
+        <p style="font-size:12.5px">科技服务生活 · 本地优先 · 只读安全</p>
+      </div>
+      <div><h4>产品</h4><a href="product.html#features">功能总览</a><a href="product.html#download">下载与版本</a><a href="product.html#changelog">更新日志</a><a href="product.html#hotfix">热更新</a></div>
+      <div><h4>资源</h4><a href="docs.html#quickstart">快速开始</a><a href="docs.html#connect">连接配置</a><a href="docs.html#faq">常见问题</a><a href="ecosystem.html#api">开发者接口</a></div>
+      <div><h4>关于</h4><a href="about.html#story">品牌故事</a><a href="support.html#feedback">反馈支持</a><a href="legal.html#privacy">隐私政策</a><a href="legal.html#terms">用户协议</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 鲸屿 JINGYU · 保留所有权利</span>
+      <span>本站为鲸屿产品官网，内容合规 · 无违法违规信息</span>
+      <span>ICP备案：待填写（中国大陆公网部署前需完成备案）</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
