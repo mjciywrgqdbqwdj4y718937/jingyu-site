@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>生态 · 鲸屿 JINGYU</title>
+<meta name="description" content="鲸屿插件、人格、模型语音与开发者接口。">
+<meta property="og:title" content="生态 · 鲸屿 JINGYU">
+<meta property="og:description" content="鲸屿插件、人格、模型语音与开发者接口。">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/jingyu.ico">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-in">
+    <a class="brand" href="index.html"><img src="assets/jingyu_logo.png" alt="鲸屿"><span><b>鲸屿</b><small>JINGYU</small></span></a>
+    <nav class="nav">
+      <a href="index.html">首页</a>
+      <a href="product.html">产品</a>
+      <a href="docs.html">文档</a>
+      <a href="ecosystem.html">生态</a>
+      <a href="support.html">支持</a>
+      <a href="about.html">关于</a>
+      <a href="legal.html">法律</a>
+    </nav>
+    <div class="header-cta"><a class="btn primary" href="product.html#download">下载 1.2</a></div>
+    <button class="menu-btn" aria-label="菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="container">
+  <p class="crumbs"><a href="index.html">首页</a> / 生态</p>
+  <p class="eyebrow">ECOSYSTEM</p>
+  <h1>生态</h1>
+  <p class="lead">插件、人格、模型与接口，组成鲸屿的周边世界。</p>
+</div></section>
+<div class="subnav"><div class="container subnav-in">
+  <a href="#plugins">插件</a><a href="#persona">人格</a><a href="#models">模型与语音</a><a href="#api">开发者接口</a><a href="#community">社区</a>
+</div></div>
+
+<section class="section" id="plugins"><div class="container">
+  <p class="eyebrow">PLUGINS</p><h2>插件生态</h2>
+  <p>按需启用，让机器人更懂你的群聊与日常。</p>
+  <div class="grid g3" style="margin-top:24px">
+    <div class="card"><h3>人格选择</h3><p>群友用指令切换会话人格，保留每个群的氛围。</p></div>
+    <div class="card"><h3>群聊增强</h3><p>更自然的多人对话、引用与上下文处理。</p></div>
+    <div class="card"><h3>语音能力</h3><p>TTS 语音回复、ASR 语音识别与音色配置。</p></div>
+    <div class="card"><h3>绘图与创作</h3><p>一句话生成图片，给聊天加点颜色。</p></div>
+    <div class="card"><h3>世界学习</h3><p>从对话中积累长期记忆与偏好。</p></div>
+    <div class="card"><h3>作息与免打扰</h3><p>夜间自动安静，活跃时减少打扰。</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="persona"><div class="container grid g2" style="align-items:center">
+  <div>
+    <p class="eyebrow">PERSONA</p><h2>小鲸娘</h2>
+    <p class="lead" style="font-size:16px">温柔软萌的鲸鱼娘，说话像真人手机打字：短句、自然、少量语气词和 🐳。她可以陪你聊天，也可以只是安静地待在控制台里。</p>
+    <p><span class="pill">温柔</span><span class="pill">软萌</span><span class="pill">有边界</span><span class="pill">可自定义</span></p>
+  </div>
+  <div class="card reveal"><h3>人格是怎么工作的？</h3><p>人格由 AstrBot 托管，鲸屿只展示当前人格与状态。你可以在 AstrBot 后台创建、编辑、切换人格，鲸屿会同步显示。</p></div>
+</div></section>
+
+<section class="section" id="models"><div class="container">
+  <p class="eyebrow">MODELS & VOICE</p><h2>模型与语音</h2>
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card"><h3>模型服务</h3><p>兼容 OpenAI 协议的模型服务，例如 DeepSeek；Key 保存在你自己的 AstrBot 配置里。</p></div>
+    <div class="card"><h3>语音合成</h3><p>支持 edge-tts 等引擎，鲸屿显示音色与可用状态。</p></div>
+    <div class="card"><h3>音色定制</h3><p>在 AstrBot 侧配置音色与语速；鲸屿只做只读展示。</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="api"><div class="container">
+  <p class="eyebrow">DEVELOPER API</p><h2>开发者接口</h2>
+  <p>鲸屿在本机 <code>127.0.0.1:8765</code> 提供只读接口，方便你写小工具或接入自己的面板。</p>
+  <div class="table-wrap"><table>
+    <tr><th>接口</th><th>说明</th></tr>
+    <tr><td><code>GET /api/overview</code></td><td>总览：QQ 状态、AstrBot 插件/人格/平台</td></tr>
+    <tr><td><code>GET /api/accounts</code></td><td>账号列表与平台状态</td></tr>
+    <tr><td><code>GET /api/plugins</code></td><td>插件列表与启用状态</td></tr>
+    <tr><td><code>GET /api/personas</code></td><td>人格列表</td></tr>
+    <tr><td><code>GET /api/version</code></td><td>当前版本</td></tr>
+    <tr><td><code>GET /api/update_check</code></td><td>更新说明（本地 update.json 可选）</td></tr>
+  </table></div>
+  <pre><code>curl http://127.0.0.1:8765/api/version
+# {"ok": true, "version": "1.2.0", "name": "鲸屿"}</code></pre>
+  <div class="notice blue">接口仅监听本机，默认只读；请勿把它暴露到公网。</div>
+</div></section>
+
+<section class="section" id="community"><div class="container">
+  <p class="eyebrow">COMMUNITY</p><h2>社区</h2>
+  <p>欢迎分享你的插件、人格与使用体验。反馈入口见 <a href="support.html#feedback">支持页</a>。</p>
+</div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:12px"><img src="assets/jingyu_logo.png" alt="鲸屿"><span><b>鲸屿</b><small>JINGYU</small></span></a>
+        <p style="font-size:13.5px">小鲸鱼娘控制台。让机器人与你的桌面更近一点。</p>
+        <p style="font-size:12.5px">科技服务生活 · 本地优先 · 只读安全</p>
+      </div>
+      <div><h4>产品</h4><a href="product.html#features">功能总览</a><a href="product.html#download">下载与版本</a><a href="product.html#changelog">更新日志</a><a href="product.html#hotfix">热更新</a></div>
+      <div><h4>资源</h4><a href="docs.html#quickstart">快速开始</a><a href="docs.html#connect">连接配置</a><a href="docs.html#faq">常见问题</a><a href="ecosystem.html#api">开发者接口</a></div>
+      <div><h4>关于</h4><a href="about.html#story">品牌故事</a><a href="support.html#feedback">反馈支持</a><a href="legal.html#privacy">隐私政策</a><a href="legal.html#terms">用户协议</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 鲸屿 JINGYU · 保留所有权利</span>
+      <span>本站为鲸屿产品官网，内容合规 · 无违法违规信息</span>
+      <span>ICP备案：待填写（中国大陆公网部署前需完成备案）</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
