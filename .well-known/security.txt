@@ -1,0 +1,5 @@
+Contact: mailto:feedback@jingyu.example
+Expires: 2027-12-31T23:59:59Z
+Preferred-Languages: zh, en
+Canonical: https://mjciywrgqdbqwdj4y718937.github.io/jingyu-site/.well-known/security.txt
+Policy: https://mjciywrgqdbqwdj4y718937.github.io/jingyu-site/legal.html#security
