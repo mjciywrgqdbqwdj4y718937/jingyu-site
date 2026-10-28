@@ -1,4 +1,4 @@
-Contact: mailto:feedback@jingyu.example
+Contact: https://wpa.qq.com/msgrd?v=3&uin=2997235296&site=qq&menu=yes
 Expires: 2027-12-31T23:59:59Z
 Preferred-Languages: zh, en
 Canonical: https://mjciywrgqdbqwdj4y718937.github.io/jingyu-site/.well-known/security.txt
